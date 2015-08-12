@@ -12,7 +12,7 @@ import com.papapa.reptile.fragment.HomeFragment;
 import com.papapa.reptile.fragment.MenuFragment;
 import com.papapa.reptile.ui.BaseActivity;
 
-public class Home extends BaseActivity{
+public class Home extends BaseActivity implements MenuFragment.OnFragmentInteractionListener, HomeFragment.OnFragmentInteractionListener{
 
 
     public Home() {
@@ -25,7 +25,7 @@ public class Home extends BaseActivity{
         //setContentView(R.layout.activity_home);
         getSupportActionBar().setDisplayShowHomeEnabled(true);
         getSupportActionBar().setIcon(R.drawable.actionbar_home_menu);
-        getSupportFragmentManager().beginTransaction().replace(R.id.frame_content, HomeFragment.newInstance("", ""));
+        getSupportFragmentManager().beginTransaction().replace(R.id.frame_content, HomeFragment.newInstance("", "")).commit();
     }
 
     @Override
@@ -44,4 +44,8 @@ public class Home extends BaseActivity{
         return super.onOptionsItemSelected(item);
     }
 
+    @Override
+    public void onFragmentInteraction(Uri uri) {
+
+    }
 }

@@ -5,11 +5,10 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
 import com.jeremyfeinstein.slidingmenu.lib.SlidingMenu;
-import com.jeremyfeinstein.slidingmenu.lib.app.SlidingFragmentActivity;
 import com.papapa.reptile.R;
 import com.papapa.reptile.fragment.MenuFragment;
 
-public class BaseActivity extends AppCompatActivity implements MenuFragment.OnFragmentInteractionListener{
+public class BaseActivity extends AppCompatActivity{
 
     private boolean isSlidingMenu = false;
     private int mTitleRes;
@@ -40,8 +39,4 @@ public class BaseActivity extends AppCompatActivity implements MenuFragment.OnFr
         getSupportFragmentManager().beginTransaction().replace(R.id.menu_frame_left, MenuFragment.newInstance("zhou", "yiran")).commit();
     }
 
-    @Override
-    public void onFragmentInteraction(Uri uri) {
-
-    }
 }

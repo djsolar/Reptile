@@ -6,7 +6,7 @@
     android:background="@color/grey_bg"
     tools:context="com.papapa.reptile.fragment.HomeFragment">
 
-    <RelativeLayout
+    <!--<RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="@dimen/viewFlipper_image_height">
 
@@ -68,6 +68,10 @@
         android:dividerHeight="@dimen/listview_divider_height">
 
     </ListView>
-
+-->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="zhouyiran"/>
 
 </LinearLayout>
