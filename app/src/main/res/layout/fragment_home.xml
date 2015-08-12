@@ -1,0 +1,73 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/grey_bg"
+    tools:context="com.papapa.reptile.fragment.HomeFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/viewFlipper_image_height">
+
+        <ViewFlipper
+            android:id="@+id/fragment_home_vp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#000000">
+
+        </ViewFlipper>
+
+
+        <LinearLayout
+            android:id="@+id/fragment_home_ll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <ImageView
+                style="@style/PointImageStyle"
+                android:src="@drawable/point_white"/>
+            <ImageView
+                style="@style/PointImageStyle"/>
+            <ImageView
+                style="@style/PointImageStyle"/>
+            <ImageView
+                style="@style/PointImageStyle"/>
+            <ImageView
+                style="@style/PointImageStyle"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/fragment_image_desc"
+            android:layout_above="@id/fragment_home_ll"
+            android:layout_centerHorizontal="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="24sp"
+            android:maxLines="2"
+            android:paddingLeft="@dimen/text_padding_ho"
+            android:paddingRight="@dimen/text_padding_ho"
+            android:paddingTop="@dimen/text_padding_ve"
+            android:paddingBottom="@dimen/text_padding_ho"
+            android:text="今晚的修破斯嗒是.小李子"/>
+
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/fragment_home_lv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@null"
+        android:dividerHeight="@dimen/listview_divider_height">
+
+    </ListView>
+
+
+</LinearLayout>
