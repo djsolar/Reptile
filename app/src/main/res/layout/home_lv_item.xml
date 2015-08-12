@@ -2,24 +2,24 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:padding="@dimen/home_item_image_padding"
     android:layout_margin="@dimen/home_item_ll_margin"
-    android:orientation="horizontal"
     android:background="@color/white"
-    android:gravity="center_vertical">
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:padding="@dimen/home_item_image_padding">
 
     <TextView
         android:layout_width="0dp"
         android:layout_height="match_parent"
-        android:layout_weight="1"
         android:layout_margin="@dimen/listview_divider_height"
-        android:textSize="20sp"
+        android:layout_weight="1"
+        android:text="中国游泳阳盛阴衰的局面再克山结束了，整体上升寻梦"
         android:textColor="@color/black"
-        android:text="中国游泳阳盛阴衰的局面再克山结束了，整体上升寻梦"/>
+        android:textSize="20sp" />
 
     <ImageView
-        android:layout_margin="@dimen/listview_divider_height"
         android:layout_width="100dp"
-        android:layout_height="100dp"/>
+        android:layout_height="100dp"
+        android:layout_margin="@dimen/listview_divider_height" />
 
 </LinearLayout>
